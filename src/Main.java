@@ -1,19 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Итоговый счет:");
 
-        int x = 1000;
-        if ( x >= 1000 ) {
-            int y = (x / 100);
-            int z = (x + y);
-            System.out.println(z);
-            System.out.println("Бонусные рубли:");
-            System.out.println(y);
+        int schet = 1000;
+        if (schet >= 1000) {
+            int balance = (schet / 100);
+            int bonus = (schet + balance);
+            System.out.println("Итоговый счет:" + bonus);
+            System.out.println("Бонусные рубли:" + balance);
         } else {
-            int y = (0);
-            System.out.println( x );
-            System.out.println("Бонусные рубли:");
-            System.out.println(y);
+            int balance = (0);
+            System.out.println(schet);
+            System.out.println("Бонусные рубли:" + balance);
         }
     }
 }
